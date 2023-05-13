@@ -15,7 +15,7 @@ function start({player1Name,player2Name}) {
     const bal2 = new Ball({
         name: player2Name,
         color: "blue",
-        speed: 30,
+        speed: 20,
         controls : {
             up: "KeyT",
             down: "KeyG",

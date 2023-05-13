@@ -8,7 +8,7 @@ class Ball {
         const ballEl = document.createElement("div");
         ballEl.classList.add("ball");
         ballEl.style.background = color;
-        document.body.appendChild(ballEl);
+        document.querySelector("#divv").appendChild(ballEl);
         this.initListeners();
         ballEl.innerHTML = name[0];
         this.ballEl = ballEl;
@@ -21,7 +21,7 @@ class Ball {
     }   
     
     moveRight() {
-        if(this.left < 1425) {    
+        if(this.left < 650) {    
             this.left += this.speed;
             this.ballEl.style.left = `${this.left}px`;
         }

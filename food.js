@@ -16,6 +16,7 @@ class Food {
         const foodEl = document.createElement("div");
         foodEl.classList.add("food");
         foodEl.style.background = ob.color;
+        document.querySelector("#divv").appendChild(foodEl);
         this.width = ob.width;
         this.height = ob.height;
         this.top = foodtop;
@@ -24,10 +25,10 @@ class Food {
         foodEl.style.left = `${this.left}px`;
         foodEl.style.height = `${this.height}px`;
         foodEl.style.width = `${this.width}px`;
-        document.body.appendChild(foodEl);
-        setInterval(() => {
-            let a = Math.round((Math.random()) * 650);
-            let b = Math.round((Math.random()) * 1000);
+        
+        setInterval(() => {  
+            let a = Math.round((Math.random()) * 630);
+            let b = Math.round((Math.random()) * 650);
             foodEl.style.top = `${a}px`;
             foodEl.style.left = `${b}px`;
         }, 1000);
